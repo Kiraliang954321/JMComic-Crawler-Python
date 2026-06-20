@@ -1,0 +1,7 @@
+name: astrbot_plugin_jmcomic
+author: KiraLiang
+desc: 在 QQ 中发送 JM 码，自动下载漫画打包 ZIP 发送
+version: 1.0.0
+display_name: JM Comic 下载
+support_platforms:
+  - aiocqhttp

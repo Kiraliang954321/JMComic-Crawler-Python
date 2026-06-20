@@ -1,0 +1,56 @@
+{
+  "download_dir": {
+    "description": "下载目录（原始图片暂存）",
+    "type": "string",
+    "default": "./jm_downloads"
+  },
+  "zip_dir": {
+    "description": "ZIP 输出目录",
+    "type": "string",
+    "default": "./jm_downloads"
+  },
+  "delete_after_send": {
+    "description": "发送后删除本地 ZIP 文件",
+    "type": "bool",
+    "default": true
+  },
+  "image_concurrency": {
+    "description": "图片下载并发数",
+    "type": "int",
+    "default": 30
+  },
+  "photo_concurrency": {
+    "description": "章节下载并发数",
+    "type": "int",
+    "default": 8
+  },
+  "client_domain": {
+    "description": "JM API 域名列表（逗号分隔）",
+    "type": "string",
+    "hint": "留空使用内置默认域名，多个域名用半角逗号分隔",
+    "default": ""
+  },
+  "retry_times": {
+    "description": "请求失败重试次数",
+    "type": "int",
+    "default": 5
+  },
+  "proxy": {
+    "description": "HTTP 代理地址",
+    "type": "string",
+    "hint": "如 http://127.0.0.1:7890，留空则不使用代理",
+    "default": ""
+  },
+  "cookies": {
+    "description": "Cookie 字符串（如需登录态）",
+    "type": "string",
+    "hint": "留空则匿名访问",
+    "default": ""
+  },
+  "jm_lib_path": {
+    "description": "JMComic-Crawler-Python 项目路径（src 目录的父级）",
+    "type": "string",
+    "hint": "如已 pip install jmcomic 则留空；否则填写项目根目录路径",
+    "default": ""
+  }
+}
